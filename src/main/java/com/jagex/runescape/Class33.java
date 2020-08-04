@@ -376,7 +376,7 @@ public class Class33 {
                     Class22_Sub1.aCacheIndex_1855 = null;
                 }
             }
-            Class59.method984(0);
+            Class59.method984();
             if(arg0 >= -109)
                 method406(-59, -67, 107, 108);
         }

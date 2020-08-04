@@ -104,25 +104,4 @@ public class Class34 {
         Class57.aClass9_1331.put((long) arg1, varbitDefinition);
         return varbitDefinition;
     }
-
-    public static int method420(int arg0, int arg1, boolean arg2) {
-        if(arg0 == -2)
-            return 12345678;
-        if(arg0 == -1) {
-            if(arg1 < 0)
-                arg1 = 0;
-            else if(arg1 > 127)
-                arg1 = 127;
-            arg1 = -arg1 + 127;
-            return arg1;
-        }
-        if(!arg2)
-            method415(-124, -88);
-        arg1 = arg1 * (arg0 & 0x7f) / 128;
-        if(arg1 < 2)
-            arg1 = 2;
-        else if(arg1 > 126)
-            arg1 = 126;
-        return (0xff80 & arg0) + arg1;
-    }
 }

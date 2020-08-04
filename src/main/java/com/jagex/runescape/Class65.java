@@ -33,10 +33,10 @@ public class Class65 {
             Class22.method308();
             if(arg0 == 104) {
                 if(RSCanvas.anInt54 > 0) {
-                    Class5.aClass22_189.method301(256, 0);
+                    Class5.aClass22_189.method301(256);
                     RSCanvas.anInt54 = 0;
                 }
-                Class5.aClass22_189.method306((byte) 101);
+                Class5.aClass22_189.close_();
                 Class5.aClass22_189 = null;
             }
         }

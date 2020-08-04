@@ -26,7 +26,7 @@ public class RSString {
     public static void method56(boolean arg1, byte[] arg2, int arg3) {
         if(Class5.aClass22_189 != null) {
             if(MouseHandler.anInt1450 >= 0) {
-                Class5.aClass22_189.method303((byte) -96);
+                Class5.aClass22_189.stop();
                 Class39.anInt909 = 0;
                 Player.aByteArray3270 = null;
                 RSCanvas.anInt54 = 20;
@@ -34,11 +34,11 @@ public class RSString {
             }
             if(arg2 != null) {
                 if(RSCanvas.anInt54 > 0) {
-                    Class5.aClass22_189.method301(arg3, 0);
+                    Class5.aClass22_189.method301(arg3);
                     RSCanvas.anInt54 = 0;
                 }
                 MouseHandler.anInt1450 = arg3;
-                Class5.aClass22_189.method300(arg2, arg1, -15910, arg3);
+                Class5.aClass22_189.method300(arg2, arg1, arg3);
             }
         }
     }

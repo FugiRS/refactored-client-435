@@ -47,7 +47,7 @@ public class Class40_Sub5_Sub13 extends SubNode {
                     PacketBuffer.anInt2258 = arg1;
             } else if(MouseHandler.anInt1450 >= 0) {
                 MouseHandler.anInt1450 = arg1;
-                Class5.aClass22_189.method304((byte) -111, arg1, 0);
+                Class5.aClass22_189.method304(arg1, 0);
             }
             if(arg0 != 22741)
                 method652();

@@ -71,7 +71,6 @@ public class Class39 implements Runnable {
 //        return false;
     }
 
-
     public void run() {
         while(aBoolean913) {
             synchronized(objectLock) {

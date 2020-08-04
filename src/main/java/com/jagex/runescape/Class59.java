@@ -44,37 +44,35 @@ public class Class59 {
         VertexNormal.lowMemory = true;
     }
 
-    public static void method984(int arg0) {
-        if(arg0 == 0) {
-            if(Class5.aClass22_189 != null) {
-                if(MouseHandler.anInt1450 >= 0) {
-                    if(RSCanvas.anInt54 > 0) {
-                        Class39.anInt909 += Buffer.anInt1982;
-                        Class5.aClass22_189.method304((byte) -97, MouseHandler.anInt1450, Class39.anInt909);
-                        RSCanvas.anInt54--;
-                        if(RSCanvas.anInt54 == 0) {
-                            Class5.aClass22_189.method303((byte) -96);
-                            MouseHandler.anInt1450 = -1;
-                            RSCanvas.anInt54 = 20;
-                        }
-                    }
-                } else if(RSCanvas.anInt54 > 0) {
-                    RSCanvas.anInt54--;
-                    if(RSCanvas.anInt54 == 0) {
-                        if(Player.aByteArray3270 == null)
-                            Class5.aClass22_189.method301(256, 0);
-                        else {
-                            Class5.aClass22_189.method301(PacketBuffer.anInt2258, arg0);
-                            MouseHandler.anInt1450 = PacketBuffer.anInt2258;
-                            Class5.aClass22_189.method300(Player.aByteArray3270, Class30.aBoolean687, -15910, PacketBuffer.anInt2258);
-                            Player.aByteArray3270 = null;
-                        }
-                        Class39.anInt909 = 0;
-                    }
-                }
-                Class5.aClass22_189.method302(0);
-            }
-        }
+    public static void method984() {
+    	if(Class5.aClass22_189 != null) {
+    		if(MouseHandler.anInt1450 >= 0) {
+    			if(RSCanvas.anInt54 > 0) {
+    				Class39.anInt909 += Buffer.anInt1982;
+    				Class5.aClass22_189.method304(MouseHandler.anInt1450, Class39.anInt909);
+    				RSCanvas.anInt54--;
+    				if(RSCanvas.anInt54 == 0) {
+    					Class5.aClass22_189.stop();
+    					MouseHandler.anInt1450 = -1;
+    					RSCanvas.anInt54 = 20;
+    				}
+    			}
+    		} else if(RSCanvas.anInt54 > 0) {
+    			RSCanvas.anInt54--;
+    			if(RSCanvas.anInt54 == 0) {
+    				if(Player.aByteArray3270 == null)
+    					Class5.aClass22_189.method301(256);
+    				else {
+    					Class5.aClass22_189.method301(PacketBuffer.anInt2258);
+    					MouseHandler.anInt1450 = PacketBuffer.anInt2258;
+    					Class5.aClass22_189.method300(Player.aByteArray3270, Class30.aBoolean687, PacketBuffer.anInt2258);
+    					Player.aByteArray3270 = null;
+    				}
+    				Class39.anInt909 = 0;
+    			}
+    		}
+    		Class5.aClass22_189.method302(0);
+    	}
     }
 
 
