@@ -21,7 +21,7 @@ public class Class24 {
     public static IndexedImage[] method337(CacheIndex arg1, int arg2, int arg3) {
         if(!ImageRGB.spriteExists(arg2, arg3, arg1))
             return null;
-        return Class22_Sub2.method315();
+        return MovedStatics.method315();
     }
 
     public static int method338(int arg0, boolean arg1, int arg2, int arg3) {
@@ -39,7 +39,7 @@ public class Class24 {
 
 
     public static boolean method340() {
-        return Class5.aClass22_189 != null;
+        return Class5.aMusicPlayer_189 != null;
 
     }
 

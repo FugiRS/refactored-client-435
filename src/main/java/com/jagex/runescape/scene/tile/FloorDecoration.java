@@ -41,7 +41,7 @@ public class FloorDecoration {
     public int z;
 
     public static void method342(int arg1, Actor arg2) {
-        Class22_Sub1.method312(arg1, arg2.worldY, arg2.worldX, 4976905);
+        MovedStatics.method312(arg1, arg2.worldY, arg2.worldX, 4976905);
     }
 
     public static void method343(boolean arg0, int arg1) {
@@ -217,13 +217,13 @@ public class FloorDecoration {
             i = 200;
         if(arg0 != 48)
             return false;
-        Class22.anInt547 += i;
+        MovedStatics.anInt547 += i;
         if(Class42.anInt1006 == 0 && Class17.anInt464 == 0 && HashTable.anInt554 == 0 && ProducingGraphicsBuffer.anInt1618 == 0)
             return true;
         if(Class57.aClass64_1345 == null)
             return false;
         try {
-            if(Class22.anInt547 > 30000)
+            if(MovedStatics.anInt547 > 30000)
                 throw new IOException();
             for(/**/; Class17.anInt464 < 20; Class17.anInt464++) {
                 if(ProducingGraphicsBuffer.anInt1618 <= 0)
@@ -252,7 +252,7 @@ public class FloorDecoration {
                     throw new IOException();
                 if(i_34_ == 0)
                     break;
-                Class22.anInt547 = 0;
+                MovedStatics.anInt547 = 0;
                 int i_35_ = 0;
                 if(PacketBuffer.aClass40_Sub5_Sub13_2250 == null)
                     i_35_ = 8;

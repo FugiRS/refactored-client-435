@@ -590,11 +590,11 @@ public class Main extends GameShell {
                 Class37.method432();
             if (!params[4].equals("free")) {
                 if (params[4].equals("members"))
-                    Class22.membersWorld = true;
+                    MovedStatics.membersWorld = true;
                 else
                     Class37.method432();
             } else
-                Class22.membersWorld = false;
+                MovedStatics.membersWorld = false;
             Main main = new Main();
             main.openClientApplet("runescape", 13, 32 + Class44.modewhat, InetAddress.getByName(Configuration.SERVER_ADDRESS), 435);
 
@@ -628,7 +628,7 @@ public class Main extends GameShell {
     public static void method44() {
         Class51.aLong1203 = 0L;
         Class12.mouseCapturer.coord = 0;
-        Class22_Sub2.duplicateClickCount = 0;
+        MovedStatics.duplicateClickCount = 0;
         Class35.aBoolean1735 = true;
         HashTable.aBoolean571 = true;
         SubNode.method540();
@@ -783,7 +783,7 @@ public class Main extends GameShell {
 
     public void method34(int arg0) { // TODO: Might be Startup
         if (Class67.aBoolean1575) {
-            Class22_Sub1.method311(MouseHandler.aCanvas1469);
+            MovedStatics.method311(MouseHandler.aCanvas1469);
             Class55.method965(32, MouseHandler.aCanvas1469);
             this.setCanvas((byte) 86);
             Widget.method642(MouseHandler.aCanvas1469, -10);
@@ -857,11 +857,11 @@ public class Main extends GameShell {
                             class40_sub1.putIntBE(435);
                             Class29.aClass64_676.method1010(5, (byte) -19, 0, class40_sub1.buffer);
                             Class8.anInt290++;
-                            Class22_Sub1.aLong1841 = System.currentTimeMillis();
+                            MovedStatics.aLong1841 = System.currentTimeMillis();
                         }
                         if (Class8.anInt290 == 3) {
                             if (Class51.anInt1197 > 5 && Class29.aClass64_676.method1014(5 + -131) <= 0) {
-                                if (System.currentTimeMillis() + -Class22_Sub1.aLong1841 > 30000L) {
+                                if (System.currentTimeMillis() + -MovedStatics.aLong1841 > 30000L) {
                                     method35(-2);
                                     break;
                                 }

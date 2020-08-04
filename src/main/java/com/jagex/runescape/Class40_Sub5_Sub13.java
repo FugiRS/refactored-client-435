@@ -41,13 +41,13 @@ public class Class40_Sub5_Sub13 extends SubNode {
     }
 
     public static void method651(int arg0, int arg1) {
-        if(Class5.aClass22_189 != null) {
+        if(Class5.aMusicPlayer_189 != null) {
             if(RSCanvas.anInt54 != 0) {
                 if(Player.aByteArray3270 != null)
                     PacketBuffer.anInt2258 = arg1;
             } else if(MouseHandler.anInt1450 >= 0) {
                 MouseHandler.anInt1450 = arg1;
-                Class5.aClass22_189.method304(arg1, 0);
+                Class5.aMusicPlayer_189.method304(arg1, 0);
             }
             if(arg0 != 22741)
                 method652();

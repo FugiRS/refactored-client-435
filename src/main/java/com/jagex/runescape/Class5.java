@@ -1,5 +1,6 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.audio.MusicPlayer;
 import com.jagex.runescape.cache.def.ActorDefinition;
 import com.jagex.runescape.cache.def.UnderlayDefinition;
 import com.jagex.runescape.cache.media.Widget.Widget;
@@ -25,7 +26,7 @@ import com.jagex.runescape.util.TextUtils;
 import java.awt.*;
 
 public class Class5 {
-    public static Class22 aClass22_189;
+    public static MusicPlayer aMusicPlayer_189;
     public static int anInt194;
     public static int anInt195 = 1;
     public static int[] chatboxLineOffsets;
@@ -81,7 +82,7 @@ public class Class5 {
 
     public static void method165(int arg0) {
         int i = 64 + SceneCluster.anInt767 * 128;
-        int i_3_ = 64 + 128 * Class22.anInt545;
+        int i_3_ = 64 + 128 * MovedStatics.anInt545;
         int i_4_ = Class37.getFloorDrawHeight(Player.worldLevel, i_3_, i) + -anInt194;
         if(i_3_ > Class12.cameraX) {
             Class12.cameraX += Class59.anInt1386 * (i_3_ + -Class12.cameraX) / 1000 + Class4.anInt188;
@@ -134,21 +135,21 @@ public class Class5 {
         if(i_11_ < -1024)
             i_11_ += 2048;
         if(i_11_ > 0) {
-            ProducingGraphicsBuffer_Sub1.anInt2210 += Class22_Sub1.anInt1856 * i_11_ / 1000 + Class60.anInt1413;
+            ProducingGraphicsBuffer_Sub1.anInt2210 += MovedStatics.anInt1856 * i_11_ / 1000 + Class60.anInt1413;
             ProducingGraphicsBuffer_Sub1.anInt2210 &= 0x7ff;
         }
         if(arg0 > 0) {
             if(i_11_ < 0) {
-                ProducingGraphicsBuffer_Sub1.anInt2210 -= Class60.anInt1413 + Class22_Sub1.anInt1856 * -i_11_ / 1000;
+                ProducingGraphicsBuffer_Sub1.anInt2210 -= Class60.anInt1413 + MovedStatics.anInt1856 * -i_11_ / 1000;
                 ProducingGraphicsBuffer_Sub1.anInt2210 &= 0x7ff;
             }
             if(i_9_ > Class26.anInt627) {
-                Class26.anInt627 += Class60.anInt1413 + Class22_Sub1.anInt1856 * (i_9_ - Class26.anInt627) / 1000;
+                Class26.anInt627 += Class60.anInt1413 + MovedStatics.anInt1856 * (i_9_ - Class26.anInt627) / 1000;
                 if(Class26.anInt627 > i_9_)
                     Class26.anInt627 = i_9_;
             }
             if(Class26.anInt627 > i_9_) {
-                Class26.anInt627 -= Class22_Sub1.anInt1856 * (Class26.anInt627 + -i_9_) / 1000 + Class60.anInt1413;
+                Class26.anInt627 -= MovedStatics.anInt1856 * (Class26.anInt627 + -i_9_) / 1000 + Class60.anInt1413;
                 if(Class26.anInt627 < i_9_)
                     Class26.anInt627 = i_9_;
             }

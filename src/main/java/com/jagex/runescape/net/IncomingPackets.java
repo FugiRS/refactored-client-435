@@ -193,7 +193,7 @@ public class IncomingPackets {
                 Buffer.anIntArray1984[i_9_] = i_8_;
                 if(GroundItemTile.varbitmasks[i_9_] != i_8_) {
                     GroundItemTile.varbitmasks[i_9_] = i_8_;
-                    Class22.method309(-1, i_9_);
+                    MovedStatics.method309(-1, i_9_);
                     ISAAC.redrawTabArea = true;
                     if(ChatBox.dialogueId != -1)
                         ChatBox.redrawChatbox = true;
@@ -283,7 +283,7 @@ public class IncomingPackets {
                 Class8.anIntArray297[i_23_] = i_24_;
                 GameShell.anIntArray2[i_23_] = i_25_;
                 GroundItemTile.anIntArray1358[i_23_] = i_26_;
-                Class22_Sub1.anIntArray1846[i_23_] = 0;
+                MovedStatics.anIntArray1846[i_23_] = 0;
                 incomingPacket = -1;
                 return true;
             }
@@ -555,14 +555,14 @@ public class IncomingPackets {
             }
             if(incomingPacket == 253) {
                 Class39.aBoolean906 = true;
-                Class22.anInt545 = incomingPacketBuffer.getUnsignedByte();
+                MovedStatics.anInt545 = incomingPacketBuffer.getUnsignedByte();
                 SceneCluster.anInt767 = incomingPacketBuffer.getUnsignedByte();
                 Class5.anInt194 = incomingPacketBuffer.getUnsignedShortBE();
                 Class4.anInt188 = incomingPacketBuffer.getUnsignedByte();
                 Class59.anInt1386 = incomingPacketBuffer.getUnsignedByte();
                 if(Class59.anInt1386 >= 100) {
                     Class40_Sub5_Sub6.cameraY = 64 + SceneCluster.anInt767 * 128;
-                    Class12.cameraX = Class22.anInt545 * 128 + 64;
+                    Class12.cameraX = MovedStatics.anInt545 * 128 + 64;
                     SceneCluster.cameraZ = Class37.getFloorDrawHeight(Player.worldLevel, Class12.cameraX, Class40_Sub5_Sub6.cameraY) - Class5.anInt194;
                 }
                 incomingPacket = -1;
@@ -745,7 +745,7 @@ public class IncomingPackets {
                 Buffer.anIntArray1984[configId] = configValue;
                 if(configValue != GroundItemTile.varbitmasks[configId]) {
                     GroundItemTile.varbitmasks[configId] = configValue;
-                    Class22.method309(-1, configId);
+                    MovedStatics.method309(-1, configId);
                     if(ChatBox.dialogueId != -1)
                         ChatBox.redrawChatbox = true;
                     ISAAC.redrawTabArea = true;
@@ -807,8 +807,8 @@ public class IncomingPackets {
                 UnderlayDefinition.anInt2576 = incomingPacketBuffer.getUnsignedByte();
                 MovedStatics.anInt892 = incomingPacketBuffer.getUnsignedShortBE();
                 Class60.anInt1413 = incomingPacketBuffer.getUnsignedByte();
-                Class22_Sub1.anInt1856 = incomingPacketBuffer.getUnsignedByte();
-                if(Class22_Sub1.anInt1856 >= 100) {
+                MovedStatics.anInt1856 = incomingPacketBuffer.getUnsignedByte();
+                if(MovedStatics.anInt1856 >= 100) {
                     int i_69_ = 128 * HashTable.anInt564 + 64;
                     int i_70_ = 128 * UnderlayDefinition.anInt2576 + 64;
                     int i_71_ = Class37.getFloorDrawHeight(Player.worldLevel, i_69_, i_70_) - MovedStatics.anInt892;
@@ -1068,7 +1068,7 @@ public class IncomingPackets {
                 for(int i_105_ = 0; i_105_ < GroundItemTile.varbitmasks.length; i_105_++) {
                     if(Buffer.anIntArray1984[i_105_] != GroundItemTile.varbitmasks[i_105_]) {
                         GroundItemTile.varbitmasks[i_105_] = Buffer.anIntArray1984[i_105_];
-                        Class22.method309(-1, i_105_);
+                        MovedStatics.method309(-1, i_105_);
                         ISAAC.redrawTabArea = true;
                     }
                 }

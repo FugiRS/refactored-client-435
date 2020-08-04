@@ -38,7 +38,7 @@ public class VarbitDefinition extends SubNode {
 
 
     public static void method566(int arg0, boolean arg1, int arg2, byte[] arg3) {
-        if(Class5.aClass22_189 != null) {
+        if(Class5.aMusicPlayer_189 != null) {
             if(MouseHandler.anInt1450 >= 0) {
                 arg2 -= 20;
                 if(arg2 < 1)
@@ -47,7 +47,7 @@ public class VarbitDefinition extends SubNode {
                 if(MouseHandler.anInt1450 == 0)
                     Buffer.anInt1982 = 0;
                 else {
-                    int i = Class29.method372(113, MouseHandler.anInt1450);
+                    int i = Class29.method372(MouseHandler.anInt1450);
                     i -= Class39.anInt909;
                     Buffer.anInt1982 = (-1 + arg2 + 3600 + i) / arg2;
                 }

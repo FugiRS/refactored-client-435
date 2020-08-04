@@ -24,9 +24,9 @@ public class Class33 {
 
     public static synchronized void method402(boolean arg0) {
         if(Class24.method340()) {
-            Class22.method308();
+            MovedStatics.method308();
             Class26.aBoolean618 = arg0;
-            Class22_Sub1.aCacheIndex_1855 = null;
+            MovedStatics.aCacheIndex_1855 = null;
         }
     }
 
@@ -36,7 +36,7 @@ public class Class33 {
             CacheIndex.anInt255 = arg2;
             Class40_Sub5_Sub17_Sub1.anInt3004 = arg5;
             Class26.aBoolean618 = arg1;
-            Class22_Sub1.aCacheIndex_1855 = arg4;
+            MovedStatics.aCacheIndex_1855 = arg4;
             CacheIndex_Sub1.anInt1806 = -1;
             OverlayDefinition.anInt2342 = arg0;
             Class40_Sub6.anInt2110 = arg6;
@@ -250,7 +250,7 @@ public class Class33 {
     public static synchronized void method405(int arg0, int arg1) {
         if(Class24.method340()) {
             OverlayDefinition.method557(arg1);
-            Class22_Sub1.aCacheIndex_1855 = null;
+            MovedStatics.aCacheIndex_1855 = null;
             Class26.aBoolean618 = false;
             if(arg0 != 16969)
                 method414(false, -11, -36, -55, 122, null);
@@ -363,7 +363,7 @@ public class Class33 {
     public static synchronized void method413(byte arg0) {
         if(Class24.method340()) {
             if(Class26.aBoolean618) {
-                byte[] is = RSString.method74(Class40_Sub5_Sub17_Sub1.anInt3004, Class22_Sub1.aCacheIndex_1855, Class8.anInt289, Class40_Sub6.anInt2110);
+                byte[] is = RSString.method74(Class40_Sub5_Sub17_Sub1.anInt3004, MovedStatics.aCacheIndex_1855, Class8.anInt289, Class40_Sub6.anInt2110);
                 if(is != null) {
                     if(CacheIndex.anInt255 < 0) {
                         if(CacheIndex_Sub1.anInt1806 < 0)
@@ -373,7 +373,7 @@ public class Class33 {
                     } else
                         Class42.method886(0, OverlayDefinition.anInt2342, Main.aBoolean1790, is, CacheIndex.anInt255);
                     Class26.aBoolean618 = false;
-                    Class22_Sub1.aCacheIndex_1855 = null;
+                    MovedStatics.aCacheIndex_1855 = null;
                 }
             }
             Class59.method984();
@@ -391,7 +391,7 @@ public class Class33 {
             Class40_Sub5_Sub17_Sub1.anInt3004 = arg4;
             Main.aBoolean1790 = arg0;
             Class40_Sub6.anInt2110 = arg1;
-            Class22_Sub1.aCacheIndex_1855 = arg5;
+            MovedStatics.aCacheIndex_1855 = arg5;
             Class8.anInt289 = songid;
         }
     }

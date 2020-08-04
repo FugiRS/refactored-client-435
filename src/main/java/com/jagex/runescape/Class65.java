@@ -29,15 +29,15 @@ public class Class65 {
     }
 
     public static void method1019(int arg0) {
-        if(Class5.aClass22_189 != null) {
-            Class22.method308();
+        if(Class5.aMusicPlayer_189 != null) {
+            MovedStatics.method308();
             if(arg0 == 104) {
                 if(RSCanvas.anInt54 > 0) {
-                    Class5.aClass22_189.method301(256);
+                    Class5.aMusicPlayer_189.method301(256);
                     RSCanvas.anInt54 = 0;
                 }
-                Class5.aClass22_189.close_();
-                Class5.aClass22_189 = null;
+                Class5.aMusicPlayer_189.close_();
+                Class5.aMusicPlayer_189 = null;
             }
         }
     }

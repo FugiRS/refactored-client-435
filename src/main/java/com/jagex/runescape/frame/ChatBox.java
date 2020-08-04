@@ -41,7 +41,7 @@ public class ChatBox {
             '$', '%', '"', '[', ']', '_', '{', '}', '/', '|'};
     public static void renderChatbox() {
         CacheIndex.aBoolean260 = true;
-        Class22.method305();
+        MovedStatics.method305();
         if(messagePromptRaised) {
             Class40_Sub5_Sub17_Sub6.fontBold.drawStringLeft(Native.aClass1_1563, 239, 40, 0);
             Class40_Sub5_Sub17_Sub6.fontBold.drawStringLeft(chatMessage + "*", 239, 60, 128);

@@ -1,14 +1,17 @@
-package com.jagex.runescape;
+package com.jagex.runescape.audio;
 
 import javax.sound.midi.*;
+
+import com.jagex.runescape.Class65;
+
 import java.io.ByteArrayInputStream;
 
-public class Class22_Sub2_Sub1 extends Class22_Sub2 implements Receiver {
+public class AppletMusicPlayerHW extends AppletMusicPlayer implements Receiver {
     public static Sequencer sequencer = null;
     public static volatile boolean playing = false;
     public static Receiver receiver = null;
 
-    public Class22_Sub2_Sub1() {
+    public AppletMusicPlayerHW() {
         try {
             receiver = MidiSystem.getReceiver();
             sequencer = MidiSystem.getSequencer(false);

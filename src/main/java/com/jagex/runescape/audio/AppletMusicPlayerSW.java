@@ -1,11 +1,12 @@
-package com.jagex.runescape;
+package com.jagex.runescape.audio;
 
-import com.jagex.runescape.audio.MidiFileReader;
+import com.jagex.runescape.Class43;
+import com.jagex.runescape.Runnable_Impl1;
 import com.jagex.runescape.cache.CacheIndex;
 import com.jagex.runescape.cache.def.UnderlayDefinition;
 import com.jagex.runescape.util.Signlink;
 
-public class Class22_Sub2_Sub2 extends Class22_Sub2 implements Runnable {
+public class AppletMusicPlayerSW extends AppletMusicPlayer implements Runnable {
     public static Runnable_Impl1 runnable;
     public static boolean aBoolean2224;
     public static MidiFileReader reader = new MidiFileReader();
@@ -14,7 +15,7 @@ public class Class22_Sub2_Sub2 extends Class22_Sub2 implements Runnable {
     public static boolean aBoolean2228;
     public static int anInt2229;
 
-    public Class22_Sub2_Sub2(Signlink arg0, Runnable_Impl1 arg1) {
+    public AppletMusicPlayerSW(Signlink arg0, Runnable_Impl1 arg1) {
 
         runnable = arg1;
         runnable.method3(25832);

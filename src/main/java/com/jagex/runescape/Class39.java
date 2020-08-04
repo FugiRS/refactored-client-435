@@ -1,5 +1,8 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.audio.WebsiteMusicPlayer;
+import com.jagex.runescape.audio.AppletMusicPlayerHW;
+import com.jagex.runescape.audio.AppletMusicPlayerSW;
 import com.jagex.runescape.cache.media.ImageRGB;
 import com.jagex.runescape.media.renderable.actor.Npc;
 import com.jagex.runescape.util.Signlink;
@@ -54,16 +57,16 @@ public class Class39 implements Runnable {
     public static boolean method452(Signlink arg0, boolean arg2) {
         RSCanvas.anInt54 = 20;
         try {
-            Class5.aClass22_189 = new Class22_Sub2_Sub1(); // Java Midi Based
+            Class5.aMusicPlayer_189 = new AppletMusicPlayerHW(); // Java Midi Based
             return true;
         } catch(Throwable throwable) {
             Runnable_Impl1 runnable_impl1 = arg0.method391(1048576);
             if(runnable_impl1 != null) {
-                Class5.aClass22_189 = new Class22_Sub2_Sub2(arg0, runnable_impl1); // ???
+                Class5.aMusicPlayer_189 = new AppletMusicPlayerSW(arg0, runnable_impl1); // ???
                 return true;
             }
             if(arg2) {
-                Class5.aClass22_189 = new Class22_Sub1(arg0); // JS based
+                Class5.aMusicPlayer_189 = new WebsiteMusicPlayer(arg0); // JS based
                 return true;
             }
             return false;

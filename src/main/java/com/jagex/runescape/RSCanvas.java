@@ -1,5 +1,6 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.audio.AppletMusicPlayer;
 import com.jagex.runescape.cache.Cache;
 import com.jagex.runescape.cache.CacheIndex;
 import com.jagex.runescape.cache.CacheIndex_Sub1;
@@ -52,7 +53,7 @@ public class RSCanvas extends Canvas {
         Class40_Sub5_Sub6.method586(64);
         Class8.method211();
         CacheIndex.method188();
-        Class22_Sub2.method316(-11965);
+        AppletMusicPlayer.method316(-11965);
         LinkedList.method907(-99);
         Class5.method167(1023);
         Class51.method941();

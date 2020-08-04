@@ -80,7 +80,7 @@ public class Class17 {
         }
         if(arg1 < 102)
             method273(null, 92, true);
-        Class22.anInt547 = 0;
+        MovedStatics.anInt547 = 0;
         LinkedList.aLong1051 = System.currentTimeMillis();
     }
 

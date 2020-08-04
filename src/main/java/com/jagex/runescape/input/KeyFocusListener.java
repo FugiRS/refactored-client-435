@@ -196,7 +196,7 @@ public class KeyFocusListener implements KeyListener, FocusListener {
         if (arg0 < 62) {
             aLinkedList_1278 = null;
         }
-        return Class22.method307(arg1, -1, 32767);
+        return MovedStatics.method307(arg1, -1, 32767);
     }
 
     public static CacheIndex_Sub1 method957(int arg0, boolean arg1, boolean arg2, byte arg3, boolean arg4) {

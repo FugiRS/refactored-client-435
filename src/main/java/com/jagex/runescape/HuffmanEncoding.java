@@ -269,7 +269,7 @@ public class HuffmanEncoding {
                     i_19_ += is[i_14_++];
                     Widget widget = Widget.forId(i_19_);
                     int i_20_ = is[i_14_++];
-                    if (i_20_ != -1 && (!ItemDefinition.forId(i_20_, 10).members || Class22.membersWorld)) {
+                    if (i_20_ != -1 && (!ItemDefinition.forId(i_20_, 10).members || MovedStatics.membersWorld)) {
                         for (int i_21_ = 0; i_21_ < widget.items.length; i_21_++) {
                             if (1 + i_20_ == widget.items[i_21_]) {
                                 i_16_ += widget.itemAmounts[i_21_];
@@ -293,7 +293,7 @@ public class HuffmanEncoding {
                 }
                 if (i_18_ == 9) {
                     for (int i_22_ = 0; i_22_ < 25; i_22_++) {
-                        if (Class22.aBooleanArray548[i_22_]) {
+                        if (MovedStatics.aBooleanArray548[i_22_]) {
                             i_16_ += Wall.anIntArray354[i_22_];
                         }
                     }
@@ -303,7 +303,7 @@ public class HuffmanEncoding {
                     i_23_ += is[i_14_++];
                     Widget widget = Widget.forId(i_23_);
                     int i_24_ = is[i_14_++];
-                    if (i_24_ != -1 && (!ItemDefinition.forId(i_24_, 10).members || Class22.membersWorld)) {
+                    if (i_24_ != -1 && (!ItemDefinition.forId(i_24_, 10).members || MovedStatics.membersWorld)) {
                         for (int i_25_ = 0; widget.items.length > i_25_; i_25_++) {
                             if (i_24_ + 1 == widget.items[i_25_]) {
                                 i_16_ = 999999999;

@@ -82,7 +82,7 @@ public class Class27 {
         int i_5_ = Class40_Sub5_Sub6.cameraY;
         for(int i_6_ = 0; i_6_ < 5; i_6_++) {
             if(Class40_Sub5_Sub17_Sub1.aBooleanArray2975[i_6_]) {
-                int i_7_ = (int) ((double) (Class8.anIntArray297[i_6_] * 2 + 1) * Math.random() - (double) Class8.anIntArray297[i_6_] + Math.sin((double) Class22_Sub1.anIntArray1846[i_6_] * ((double) GroundItemTile.anIntArray1358[i_6_] / 100.0)) * (double) GameShell.anIntArray2[i_6_]);
+                int i_7_ = (int) ((double) (Class8.anIntArray297[i_6_] * 2 + 1) * Math.random() - (double) Class8.anIntArray297[i_6_] + Math.sin((double) MovedStatics.anIntArray1846[i_6_] * ((double) GroundItemTile.anIntArray1358[i_6_] / 100.0)) * (double) GameShell.anIntArray2[i_6_]);
                 if(i_6_ == 1) {
                     SceneCluster.cameraZ += i_7_;
                 }
@@ -302,7 +302,7 @@ public class Class27 {
                     int i_16_ = widget.clientScripts[0][1];
                     if(widget.alternateRhs[0] != GroundItemTile.varbitmasks[i_16_]) {
                         GroundItemTile.varbitmasks[i_16_] = widget.alternateRhs[0];
-                        Class22.method309(-1, i_16_);
+                        MovedStatics.method309(-1, i_16_);
                         ISAAC.redrawTabArea = true;
                     }
                 }
@@ -414,7 +414,7 @@ public class Class27 {
                     if(widget.clientScripts != null && widget.clientScripts[0][0] == 5) {
                         int i_17_ = widget.clientScripts[0][1];
                         GroundItemTile.varbitmasks[i_17_] = -GroundItemTile.varbitmasks[i_17_] + 1;
-                        Class22.method309(-1, i_17_);
+                        MovedStatics.method309(-1, i_17_);
                         ISAAC.redrawTabArea = true;
                     }
                 }
@@ -1044,9 +1044,9 @@ public class Class27 {
         if(arg0 != -34) {
             method368((byte) 123, true, false);
         }
-        Class22.anInt537++;
-        if(Class22.anInt537 >= 50 || arg1) {
-            Class22.anInt537 = 0;
+        MovedStatics.anInt537++;
+        if(MovedStatics.anInt537 >= 50 || arg1) {
+            MovedStatics.anInt537 = 0;
             if(!Class37.aBoolean871 && Class40_Sub6.gameConnection != null) {
                 SceneCluster.packetBuffer.putPacket(13);
                 try {

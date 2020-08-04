@@ -204,7 +204,7 @@ public class SpotAnimDefinition extends SubNode {
                 if (Class40_Sub3.anInt2032 == 9 && Class40_Sub6.gameConnection.method1014(-121) >= 8) {
 
                     InteractiveObject.playerRights = Class40_Sub6.gameConnection.read();
-                    Class22.accountFlagged = Class40_Sub6.gameConnection.read() == 1;
+                    MovedStatics.accountFlagged = Class40_Sub6.gameConnection.read() == 1;
                     Class30.anInt708 = Class40_Sub6.gameConnection.read();
                     Class30.anInt708 <<= 8;
                     Class30.anInt708 += Class40_Sub6.gameConnection.read();

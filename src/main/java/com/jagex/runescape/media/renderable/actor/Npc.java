@@ -78,7 +78,7 @@ public class Npc extends Actor {
                 }
                 Class40_Sub5_Sub6.putHackCheckPacket(-12, 205, SceneCluster.packetBuffer);
                 synchronized(Class12.mouseCapturer.objectLock) {
-                    if(Class22.accountFlagged) {
+                    if(MovedStatics.accountFlagged) {
                         if(MouseHandler.clickType != 0 || Class12.mouseCapturer.coord >= 40) {
                             int coordinateCount = 0;
                             SceneCluster.packetBuffer.putPacket(210);
@@ -106,24 +106,24 @@ public class Npc extends Actor {
                                     pixelOffset = 0x7ffff;
                                 }
                                 if(x == PacketBuffer.lastClickX && y == GameObjectDefinition.lastClickY) {
-                                    if(Class22_Sub2.duplicateClickCount < 2047)
-                                        Class22_Sub2.duplicateClickCount++;
+                                    if(MovedStatics.duplicateClickCount < 2047)
+                                        MovedStatics.duplicateClickCount++;
                                 } else {
                                     int differenceX = x - PacketBuffer.lastClickX;
                                     PacketBuffer.lastClickX = x;
                                     int differenceY = pixelOffset - GameObjectDefinition.lastClickY;
                                     GameObjectDefinition.lastClickY = pixelOffset;
-                                    if(Class22_Sub2.duplicateClickCount < 8 && differenceX >= -32 && differenceX <= 31 && differenceY >= -32 && differenceY <= 31) {
+                                    if(MovedStatics.duplicateClickCount < 8 && differenceX >= -32 && differenceX <= 31 && differenceY >= -32 && differenceY <= 31) {
                                         differenceX += 32;
                                         differenceY += 32;
-                                        SceneCluster.packetBuffer.putShortBE(differenceY + (differenceX << 6) + (Class22_Sub2.duplicateClickCount << 12));
-                                        Class22_Sub2.duplicateClickCount = 0;
-                                    } else if(Class22_Sub2.duplicateClickCount < 8) {
-                                        SceneCluster.packetBuffer.putMediumBE(y + 8388608 + (Class22_Sub2.duplicateClickCount << 19));
-                                        Class22_Sub2.duplicateClickCount = 0;
+                                        SceneCluster.packetBuffer.putShortBE(differenceY + (differenceX << 6) + (MovedStatics.duplicateClickCount << 12));
+                                        MovedStatics.duplicateClickCount = 0;
+                                    } else if(MovedStatics.duplicateClickCount < 8) {
+                                        SceneCluster.packetBuffer.putMediumBE(y + 8388608 + (MovedStatics.duplicateClickCount << 19));
+                                        MovedStatics.duplicateClickCount = 0;
                                     } else {
-                                        SceneCluster.packetBuffer.putIntBE((Class22_Sub2.duplicateClickCount << 19) + -1073741824 + y);
-                                        Class22_Sub2.duplicateClickCount = 0;
+                                        SceneCluster.packetBuffer.putIntBE((MovedStatics.duplicateClickCount << 19) + -1073741824 + y);
+                                        MovedStatics.duplicateClickCount = 0;
                                     }
                                 }
                             }
@@ -197,7 +197,7 @@ public class Npc extends Actor {
                     else {
                         Class17.method276(-1);
                         Class8.method209();
-                        Class22_Sub1.method313();
+                        MovedStatics.method313();
                         if(LinkedList.crossType != 0) {
                             OverlayDefinition.crossIndex += 20;
                             if(OverlayDefinition.crossIndex >= 400)
@@ -336,7 +336,7 @@ public class Npc extends Actor {
                         if(Class39.aBoolean906)
                             Class5.method165(35);
                         for(int i_19_ = 0; i_19_ < 5; i_19_++)
-                            Class22_Sub1.anIntArray1846[i_19_]++;
+                            MovedStatics.anIntArray1846[i_19_]++;
                         Class40_Sub5_Sub6.manageTextInputs();
                         int i_20_ = method400(-1);
                         int i_21_ = Class17.method274(true);
@@ -373,7 +373,7 @@ public class Npc extends Actor {
                             Class42.anInt1010 = 2;
                         if(Class43.cameraYawOffset < -60)
                             Class13.anInt419 = 2;
-                        Class22.anInt537++;
+                        MovedStatics.anInt537++;
                         if(Buffer.cameraOffsetX > 50)
                             Class42.anInt1010 = -2;
                         if(Class43.cameraYawOffset > 60)
@@ -386,7 +386,7 @@ public class Npc extends Actor {
                             Main.anInt1766 = 1;
                         if(Class51.mapZoomOffset > 10)
                             Main.anInt1766 = -1;
-                        if(Class22.anInt537 > 50) {
+                        if(MovedStatics.anInt537 > 50) {
                             SceneCluster.packetBuffer.putPacket(13);
                         }
                         do {
@@ -394,7 +394,7 @@ public class Npc extends Actor {
                                 if(Class40_Sub6.gameConnection == null || SceneCluster.packetBuffer.currentPosition <= 0)
                                     break;
                                 Class40_Sub6.gameConnection.method1010(SceneCluster.packetBuffer.currentPosition, (byte) -19, 0, SceneCluster.packetBuffer.buffer);
-                                Class22.anInt537 = 0;
+                                MovedStatics.anInt537 = 0;
                                 SceneCluster.packetBuffer.currentPosition = 0;
                             } catch(java.io.IOException ioexception) {
                                 Class59.dropClient();

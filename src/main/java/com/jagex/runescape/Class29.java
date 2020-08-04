@@ -23,9 +23,7 @@ public class Class29 {
         return arg0 != 8247;
     }
 
-    public static int method372(int arg0, int arg1) {
-        if(arg0 <= 92)
-            method372(4, 3);
+    public static int method372(int arg1) {
         return (int) (0.5 + Math.log(0.00390625 * (double) arg1) * 868.5889638065036);
     }
 
